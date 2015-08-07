@@ -38,15 +38,17 @@ public class HomePage extends AbstractPage {
     //линк изменения языка на укр
     private static final By CHANGE_TO_UKR_LINK = By.xpath("//section[@id='block-locale-language']/ul/li[2]/a/img");
 
-    //заголовок "Знай" инфоблока
+    /*//заголовок "Знай" инфоблока
     private static final By INFOBLOCK_KNOW_TITLE = By.xpath("//div[@id='second-block']/div/div/div[1]/h1");
     //заголовок "Розумій" инфоблока
     private static final By INFOBLOCK_UNDERSTAND_TITLE = By.xpath("//div[@id='third-block']/div/div/div[1]/h1");
     //заголовок "Дій" инфоблока
-    private static final By INFOBLOCK_ACTION_TITLE = By.xpath("//div[@id='fourth-block']/div/div/div[1]/h1");
+    private static final By INFOBLOCK_ACTION_TITLE = By.xpath("//div[@id='fourth-block']/div/div/div[1]/h1");*/
 
     //линки с текстом "Поділитись цим фактом"
     private static final By SHARE_THIS_FACT_LINKS = By.xpath("//td[contains(concat(' ', @class, ' '), ' fact-text ')]/a");
+    //линки под инфоблоками (по 3 в каждом)
+    private static final By UNDER_INFOBLOCKS_LINKS = By.xpath("");
 
     //линк для подписки на youtube
     private static final By YT_FOOTER_LINK = By.xpath("//td[contains(concat(' ', @class, ' '), ' col-lg-2 col-md-2 col-sm-3 col-xs-3 social-icons ')]/a[1]");
@@ -68,7 +70,7 @@ public class HomePage extends AbstractPage {
     //первый пункт DropDownMenu под инфоблоком "Знай"
     private static final By CHOOSE_REPORT_DROPDOWNMENU_BUTTON_FIRST_ITEM = By.xpath("//ul[contains(concat(' ', @class, ' '), ' menu dropdown-menu ')]/li[1]");
     //пункты DropDownMenu под инфоблоком "Знай"
-    private static final By CHOOSE_REPORT_DROPDOWNMENU_BUTTON_ITEMS = By.xpath("//ul[@id='stat-dropdown']/li");
+    private static final By CHOOSE_REPORT_DROPDOWNMENU_BUTTON_ITEMS = By.xpath("//ul[@id='stat-dropdown']/li/a");
     //кнопка "Детальніше" в блоке "Статистика"
     private static final By STATISTICS_MORE_BUTTON = By.xpath("//a[@id='statistics-more-a']/button");
 
@@ -128,7 +130,7 @@ public class HomePage extends AbstractPage {
         return browser.findElement(CHANGE_TO_UKR_LINK);
     }
 
-    public WebElement infoblockKnowTitle(Browser browser) {
+    /*public WebElement infoblockKnowTitle(Browser browser) {
         return browser.findElement(INFOBLOCK_KNOW_TITLE);
     }
 
@@ -138,7 +140,7 @@ public class HomePage extends AbstractPage {
 
     public WebElement infoblockActionTitle(Browser browser) {
         return browser.findElement(INFOBLOCK_ACTION_TITLE);
-    }
+    }*/
 
     public List<WebElement> shareThisFactLinks(Browser browser) {
         return browser.findElements(SHARE_THIS_FACT_LINKS);

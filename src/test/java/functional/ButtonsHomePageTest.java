@@ -80,7 +80,7 @@ public class ButtonsHomePageTest extends AbstractTest {
         int expectedKnowButtonLocationX = 154;
         int expectedKnowButtonLocationY = 421;
 
-        for (int i = 0; i <= 100; i++) {
+        for (int i = 0; i <= 50; i++) {
             browser.navigate().refresh();
             //реальные координаты кнопки "Знай"
             int actualKnowButtonLocationX = hp.knowButton(browser).getLocation().getX();
@@ -105,7 +105,7 @@ public class ButtonsHomePageTest extends AbstractTest {
         List<WebElement> list = hp.underInfoblocksButtons(browser);
         for (WebElement webEl : list) {
             Assert.assertTrue(webEl.isDisplayed());
-            //webEl.click();
+            webEl.click();
         }
 
         logger.info("End of create testUnderInfoblocksButtons");

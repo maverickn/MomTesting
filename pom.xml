@@ -21,12 +21,6 @@
                 <browser.name>chrome</browser.name>
             </properties>
         </profile>
-        <!--<profile>
-            <id>opera_local</id>
-            <properties>
-                <browser.name>opera</browser.name>
-            </properties>
-        </profile>-->
     </profiles>
 
     <properties>

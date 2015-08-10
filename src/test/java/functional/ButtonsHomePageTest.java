@@ -20,6 +20,7 @@ public class ButtonsHomePageTest extends AbstractTest {
         hp.isOpened();
         Assert.assertTrue(hp.knowButton(browser).isDisplayed());
         hp.knowButton(browser).click();
+        Assert.assertTrue(hp.infoblockKnow(browser).isDisplayed());
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
@@ -38,6 +39,7 @@ public class ButtonsHomePageTest extends AbstractTest {
         hp.isOpened();
         Assert.assertTrue(hp.understandButton(browser).isDisplayed());
         hp.understandButton(browser).click();
+        Assert.assertTrue(hp.infoblockUnderstand(browser).isDisplayed());
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
@@ -57,6 +59,7 @@ public class ButtonsHomePageTest extends AbstractTest {
         hp.isOpened();
         Assert.assertTrue(hp.actionButton(browser).isDisplayed());
         hp.actionButton(browser).click();
+        Assert.assertTrue(hp.infoblockAction(browser).isDisplayed());
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

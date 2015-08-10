@@ -7,6 +7,7 @@
         <classes>
             <class name="functional.LinksHomePageTest" />
             <class name="functional.ButtonsHomePageTest" />
+            <class name="functional.LinksEventsPageTest" />
         </classes>
     </test>
 </suite>

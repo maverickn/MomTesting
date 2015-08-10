@@ -38,12 +38,12 @@ public class HomePage extends AbstractPage {
     //линк изменения языка на укр
     private static final By CHANGE_TO_UKR_LINK = By.xpath("//section[@id='block-locale-language']/ul/li[2]/a/img");
 
-    /*//заголовок "Знай" инфоблока
-    private static final By INFOBLOCK_KNOW_TITLE = By.xpath("//div[@id='second-block']/div/div/div[1]/h1");
+    //заголовок "Знай" инфоблока
+    private static final By INFOBLOCK_KNOW = By.xpath("//div[@id='second-block']");
     //заголовок "Розумій" инфоблока
-    private static final By INFOBLOCK_UNDERSTAND_TITLE = By.xpath("//div[@id='third-block']/div/div/div[1]/h1");
+    private static final By INFOBLOCK_UNDERSTAND = By.xpath("//div[@id='third-block']");
     //заголовок "Дій" инфоблока
-    private static final By INFOBLOCK_ACTION_TITLE = By.xpath("//div[@id='fourth-block']/div/div/div[1]/h1");*/
+    private static final By INFOBLOCK_ACTION = By.xpath("//div[@id='fourth-block']");
 
     //линки с текстом "Поділитись цим фактом"
     private static final By SHARE_THIS_FACT_LINKS = By.xpath("//td[contains(concat(' ', @class, ' '), ' fact-text ')]/a");
@@ -130,17 +130,17 @@ public class HomePage extends AbstractPage {
         return browser.findElement(CHANGE_TO_UKR_LINK);
     }
 
-    /*public WebElement infoblockKnowTitle(Browser browser) {
-        return browser.findElement(INFOBLOCK_KNOW_TITLE);
+    public WebElement infoblockKnow(Browser browser) {
+        return browser.findElement(INFOBLOCK_KNOW);
     }
 
-    public WebElement infoblockUnderstandTitle(Browser browser) {
-        return browser.findElement(INFOBLOCK_UNDERSTAND_TITLE);
+    public WebElement infoblockUnderstand(Browser browser) {
+        return browser.findElement(INFOBLOCK_UNDERSTAND);
     }
 
-    public WebElement infoblockActionTitle(Browser browser) {
-        return browser.findElement(INFOBLOCK_ACTION_TITLE);
-    }*/
+    public WebElement infoblockAction(Browser browser) {
+        return browser.findElement(INFOBLOCK_ACTION);
+    }
 
     public List<WebElement> shareThisFactLinks(Browser browser) {
         return browser.findElements(SHARE_THIS_FACT_LINKS);

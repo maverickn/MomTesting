@@ -8,6 +8,8 @@
             <class name="functional.LinksHomePageTest" />
             <class name="functional.ButtonsHomePageTest" />
             <class name="functional.LinksEventsPageTest" />
+            <class name="functional.FBPluginAboutUsPageTest" />
+            <class name="functional.LinksPublicationsPageTest" />
         </classes>
     </test>
 </suite>

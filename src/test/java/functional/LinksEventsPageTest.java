@@ -31,7 +31,7 @@ public class LinksEventsPageTest extends AbstractTest {
             Assert.assertTrue(ep.eventsLinkText(browser, i).isDisplayed());
             ep.eventsLinkText(browser, i).click();
             try {
-                Thread.sleep(5000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

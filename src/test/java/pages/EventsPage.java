@@ -10,11 +10,9 @@ public class EventsPage extends AbstractPage {
     //заголовок на странице
     private static final String EVENTS = "Заходи";
     private static final By EVENTS_TEXT = By.xpath("//section[@id='block-system-main']/div/div/div/div[1]/h2");
-
     //xpath линка мероприятия
     private static final String EVENTS_LINKS_1 = "//div[contains(concat(' ', @class, ' '), '  col-lg-9 col-md-9 col-sm-12 col-xs-12 content-title ')]/div[";
     private static final String EVENTS_LINKS_2 = "]/div";
-
     //xpath названия мероприятия
     private static final String EVENTS_LINK_TEXT_1 = "//div[contains(concat(' ', @class, ' '), '  col-lg-9 col-md-9 col-sm-12 col-xs-12 content-title ')]/div[";
     private static final String EVENTS_LINK_TEXT_2 = "]/div/div/a/div/div";
